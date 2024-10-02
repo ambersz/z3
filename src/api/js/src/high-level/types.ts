@@ -1308,7 +1308,7 @@ export interface BitVec<Bits extends number = number, Name extends string = 'mai
 
   /**
    * Creates an extraction operation.
-   * Bits are indexed starting from 1 from the most right one (least significant) increasing to left (most significant)
+   * Bits are indexed starting from 0 for the right-most (least significant) bit, increasing to the left (most significant) bit
    *
    * ```typescript
    * const x = BitVec.const('x', 8);
